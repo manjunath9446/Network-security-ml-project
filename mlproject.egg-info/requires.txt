@@ -3,5 +3,3 @@ numpy
 pandas
 pymango
 certifi
-
-##-e .

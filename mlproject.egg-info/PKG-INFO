@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: mlproject
+Version: 0.0.1
+Author: manjuunath
+Author-email: manju.r.k9446@gmail.com
+Requires-Dist: python-dotenv
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pymango
+Requires-Dist: certifi
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
