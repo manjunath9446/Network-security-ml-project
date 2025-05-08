@@ -21,7 +21,7 @@ print(get_requirements())
 setup(
     name='mlproject',
     version='0.0.1',
-    author='manjuunath',
+    author='manjunath',
     author_email='manju.r.k9446@gmail.com',
     packages=find_packages(),
     install_requires=get_requirements()

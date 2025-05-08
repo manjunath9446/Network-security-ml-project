@@ -2,7 +2,7 @@ import sys
 print(sys.path)
 sys.path.append(r'E:\ML projects\fastapi\networksecurity')
 from networksecurity.logger.logger import logger
-
+import pymongo as pymongo
 class NetworksecurityException(Exception):
     def __init__(self,error_message,error_detail:sys):
         self.error_message=error_message
@@ -11,9 +11,9 @@ class NetworksecurityException(Exception):
         self.lineno=exc_tb.tb_lineno
         self.filename=exc_tb.tb_frame.f_code.co_filename
     
-    def _str_(self):
-        return"Error occured in python script name [{0}] line number [{1}] error message[{2}]"
-        self.filename,self.lineno,str(self.error_message)
+    def __str__(self):
+        return"Error occured in python script name [{0}] line number [{1}] error message[{2}]".format(
+        self.filename,self.lineno,str(self.error_message))
 
 if __name__=="__main__":
     try:
